@@ -1,0 +1,55 @@
+<h2 style="color:Blue;">Premium Bunglows</h2>
+
+
+<div class="container">
+<div class="row">
+   {% for prop in bungalowss %}     
+        <div class="col-lg-4">
+                    <div class="listing">
+                        <div class="listing_image">
+                            <div class="listing_image_container">
+                                <img src="" class="card-img-top" alt="...">
+                            </div>
+                            <div class="tags d-flex flex-row align-items-start justify-content-start flex-wrap">
+                                <div class="tag tag_house">{{prop.Buildname}}</div>
+                                <div class="tag tag_sale">{{prop.propertytype}}</div>  
+                                
+                                <div class="tag tag_sale">{{prop.propertyfor}}</div>
+                            </div>
+                            <div class="tag_price listing_price">{{prop.price}}</div>
+                        </div>
+                        <br><br>
+                    </div>
+                </div>
+           
+    {% endfor %}
+<BR>
+<br>
+    <h2 style="color:Blue;">Premium Flats</h2>
+    <br>
+    <div class="container">
+<div class="row">
+   {% for prop in flatss %}     
+        <div class="col-lg-4">
+                    <div class="listing">
+                        <div class="listing_image">
+                            <div class="listing_image_container">
+                                <img src="" class="card-img-top" alt="...">
+                            </div>
+                            <div class="tags d-flex flex-row align-items-start justify-content-start flex-wrap">
+                                <div class="tag tag_house">{{prop.Buildname}}</div>
+                                <div class="tag tag_sale">{{prop.propertytype}}</div>  
+                                
+                                <div class="tag tag_sale">{{prop.propertyfor}}</div>
+                            </div>
+                            <div class="tag_price listing_price">{{prop.price}}</div>
+                        </div>
+                        <br><br>
+                    </div>
+                </div>
+           
+    {% endfor %}
+           
+           
+</div>
+</div>

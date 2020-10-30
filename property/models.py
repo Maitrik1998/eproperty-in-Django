@@ -59,20 +59,20 @@ class Property(models.Model):
         
 
     useremail=models.EmailField() 
-    pid=models.AutoField(primary_key=True)
+    id=models.AutoField(primary_key=True)
 
-    Iam=models.CharField(
+    Youare=models.CharField(
                 max_length=10,
                 choices=iams,
                 default='Owner',
         )
 
-    ptype=models.CharField(
+    propertytype=models.CharField(
                 max_length=10,
                 choices=propertytype,
                 default='Flat',
         )
-    pfor=models.CharField(
+    propertyfor=models.CharField(
                 max_length=5,
                 choices=propertysfor,
                 default='Sell',
@@ -80,7 +80,7 @@ class Property(models.Model):
 
     Buildname=models.CharField(max_length=100)
     
-    Adress=models.CharField(max_length=200)
+    Address=models.CharField(max_length=200)
     
     Area=models.CharField(
                 max_length=9,
@@ -94,7 +94,7 @@ class Property(models.Model):
                 default='Other',
         )
 
-    Superbuildup=models.IntegerField()
+    superbuildup=models.IntegerField()
     buildup=models.IntegerField()
     
     meter=models.CharField(
@@ -112,8 +112,8 @@ class Property(models.Model):
 
     pfloor=models.IntegerField()
     tfloor=models.IntegerField()
-    cparkinng=models.BooleanField()
-    oparkinng=models.BooleanField()
+    cparking=models.BooleanField()
+    oparking=models.BooleanField()
     age=models.CharField(
                 max_length=19,
                 choices=Age,
@@ -123,7 +123,7 @@ class Property(models.Model):
     nego=models.BooleanField()
     cname=models.CharField(max_length=100)  
     cemail=models.EmailField()  
-    mobile=models.CharField(max_length=15)
+    cmobile=models.CharField(max_length=15)
     image=models.ImageField(upload_to ='uploads/')
     image2=models.ImageField(upload_to ='uploads/')
     image3=models.ImageField(upload_to ='uploads/')

@@ -82,11 +82,15 @@
                 </div>
             </nav>
              
-            
+           {% include 'carsoul.html' %}
             {% block content %}
+
+
             {% endblock %}
 
-            <div class="line"></div>
+            <div class="line">
+                {% include 'property.html' %}
+            </div>
 
            
             <div class="line"></div>
